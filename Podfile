@@ -7,14 +7,17 @@ target 'parsgram' do
 
   # Pods for parsgram
   pod "AlamofireImage"
+  pod "Parse"
 
   target 'parsgramTests' do
     inherit! :search_paths
     # Pods for testing
+    pod "Parse"
   end
 
   target 'parsgramUITests' do
     # Pods for testing
+    pod "Parse"
   end
 
 end

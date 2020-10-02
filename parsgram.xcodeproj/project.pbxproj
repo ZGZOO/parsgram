@@ -3,19 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2DC069CC1BC54E2EC42FA616 /* Pods_parsgramTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33D202C3786CBAD9CC0A00C8 /* Pods_parsgramTests.framework */; };
 		B18E957D2526E9EB00B938B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18E957C2526E9EB00B938B5 /* AppDelegate.swift */; };
 		B18E957F2526E9EB00B938B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18E957E2526E9EB00B938B5 /* SceneDelegate.swift */; };
-		B18E95812526E9EB00B938B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18E95802526E9EB00B938B5 /* ViewController.swift */; };
 		B18E95842526E9EB00B938B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B18E95822526E9EB00B938B5 /* Main.storyboard */; };
 		B18E95862526E9ED00B938B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B18E95852526E9ED00B938B5 /* Assets.xcassets */; };
 		B18E95892526E9ED00B938B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B18E95872526E9ED00B938B5 /* LaunchScreen.storyboard */; };
 		B18E95942526E9ED00B938B5 /* parsgramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18E95932526E9ED00B938B5 /* parsgramTests.swift */; };
 		B18E959F2526E9ED00B938B5 /* parsgramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18E959E2526E9ED00B938B5 /* parsgramUITests.swift */; };
+		B18E95AD2526F29B00B938B5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18E95AC2526F29B00B938B5 /* LoginViewController.swift */; };
+		B18E95AF2526F2AA00B938B5 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18E95AE2526F2AA00B938B5 /* FeedViewController.swift */; };
 		D087FB95BCBAE4C8F22678DF /* Pods_parsgram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 407180649816FF1A72B28CFC /* Pods_parsgram.framework */; };
 		EB66C47E4AC3BEFDA57C73E9 /* Pods_parsgram_parsgramUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB4D56B431EA8F348CE640C /* Pods_parsgram_parsgramUITests.framework */; };
 /* End PBXBuildFile section */
@@ -47,7 +48,6 @@
 		B18E95792526E9EB00B938B5 /* parsgram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = parsgram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B18E957C2526E9EB00B938B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B18E957E2526E9EB00B938B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B18E95802526E9EB00B938B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B18E95832526E9EB00B938B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B18E95852526E9ED00B938B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B18E95882526E9ED00B938B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,6 +58,8 @@
 		B18E959A2526E9ED00B938B5 /* parsgramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = parsgramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B18E959E2526E9ED00B938B5 /* parsgramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = parsgramUITests.swift; sourceTree = "<group>"; };
 		B18E95A02526E9ED00B938B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B18E95AC2526F29B00B938B5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B18E95AE2526F2AA00B938B5 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		D60A2FBF2443BCEF1633D79E /* Pods-parsgramTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-parsgramTests.debug.xcconfig"; path = "Target Support Files/Pods-parsgramTests/Pods-parsgramTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F4E23351FF3C86DE044D30FF /* Pods-parsgram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-parsgram.debug.xcconfig"; path = "Target Support Files/Pods-parsgram/Pods-parsgram.debug.xcconfig"; sourceTree = "<group>"; };
 		FA6B8A74890E63459399520A /* Pods-parsgramTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-parsgramTests.release.xcconfig"; path = "Target Support Files/Pods-parsgramTests/Pods-parsgramTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -101,7 +103,6 @@
 				D60A2FBF2443BCEF1633D79E /* Pods-parsgramTests.debug.xcconfig */,
 				FA6B8A74890E63459399520A /* Pods-parsgramTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -132,11 +133,12 @@
 			children = (
 				B18E957C2526E9EB00B938B5 /* AppDelegate.swift */,
 				B18E957E2526E9EB00B938B5 /* SceneDelegate.swift */,
-				B18E95802526E9EB00B938B5 /* ViewController.swift */,
 				B18E95822526E9EB00B938B5 /* Main.storyboard */,
 				B18E95852526E9ED00B938B5 /* Assets.xcassets */,
 				B18E95872526E9ED00B938B5 /* LaunchScreen.storyboard */,
 				B18E958A2526E9ED00B938B5 /* Info.plist */,
+				B18E95AC2526F29B00B938B5 /* LoginViewController.swift */,
+				B18E95AE2526F2AA00B938B5 /* FeedViewController.swift */,
 			);
 			path = parsgram;
 			sourceTree = "<group>";
@@ -199,6 +201,7 @@
 				B18E958B2526E9ED00B938B5 /* Sources */,
 				B18E958C2526E9ED00B938B5 /* Frameworks */,
 				B18E958D2526E9ED00B938B5 /* Resources */,
+				A6EB7948541F08CD365BD195 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -384,6 +387,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A6EB7948541F08CD365BD195 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-parsgramTests/Pods-parsgramTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-parsgramTests/Pods-parsgramTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-parsgramTests/Pods-parsgramTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C4A34E38785DB006B48B9B79 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -408,8 +428,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B18E95812526E9EB00B938B5 /* ViewController.swift in Sources */,
+				B18E95AD2526F29B00B938B5 /* LoginViewController.swift in Sources */,
 				B18E957D2526E9EB00B938B5 /* AppDelegate.swift in Sources */,
+				B18E95AF2526F2AA00B938B5 /* FeedViewController.swift in Sources */,
 				B18E957F2526E9EB00B938B5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
