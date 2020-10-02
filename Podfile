@@ -6,7 +6,6 @@ target 'parsgram' do
   use_frameworks!
 
   # Pods for parsgram
-  pod "Parse"
   pod "AlamofireImage"
 
   target 'parsgramTests' do
