@@ -23,4 +23,4 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://res.cloudinary.com/headincloud/image/upload/v1601762596/parsgram_gif2_zojrdn.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://res.cloudinary.com/headincloud/image/upload/v1601762596/parsgram_gif2_zojrdn.gif' title='Video Walkthrough' alt='Video Walkthrough' />
