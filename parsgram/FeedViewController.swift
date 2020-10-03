@@ -117,7 +117,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         let query = PFQuery(className: "Posts")
-        numberOfPost = 5
+        numberOfPost = 10
         query.includeKey("author")
         query.limit = numberOfPost
         
@@ -134,7 +134,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     func loadMorePosts(){
         let query = PFQuery(className: "Posts")
         query.includeKey("author")
-        query.limit = numberOfPost + 5
+        query.limit = numberOfPost + 20
         
         query.findObjectsInBackground { (posts, error) in
             if posts != nil{
