@@ -23,4 +23,8 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://res.cloudinary.com/headincloud/image/upload/v1601762712/parsgram_gif2_kbkgdq.gif' title='Video Walkthrough' alt='Video Walkthrough' />
+<img src='https://res.cloudinary.com/headincloud/image/upload/v1601763020/parsgram_gif3_yaf3ki.gif' title='Video Walkthrough' alt='Video Walkthrough' />
+
+The infinite scroll:
+
+<img src='https://res.cloudinary.com/headincloud/image/upload/v1601763030/parsgram_gif4_kd0lij.gif' title='Video Walkthrough' alt='Video Walkthrough' />
