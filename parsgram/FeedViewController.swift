@@ -224,10 +224,17 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             let user = post["author"] as! PFUser
             cell.usernameLabel.text = user.username
             cell.captionLabel.text = post["caption"] as! String
+            
             let imageFile = post["image"] as! PFFileObject
             let urlString = imageFile.url!
             let url = URL(string: urlString)!
             cell.photoView.af_setImage(withURL: url)
+            
+            let profileImg = user["profilepic"] as! PFFileObject
+            let urlString2 = profileImg.url!
+            let url2 = URL(string: urlString2)!
+            cell.profileView.af_setImage(withURL: url2)
+            
             return cell
         }else if indexPath.row <= comments.count{
             let cell = tableView.dequeueReusableCell(withIdentifier: "CommentCell") as! CommentCell
@@ -235,6 +242,11 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             cell.commentLabel.text = comment["text"] as? String
             let user = comment["author"] as! PFUser
             cell.nameLabel.text = user.username
+            let profileImg = user["profilepic"] as! PFFileObject
+            let urlString2 = profileImg.url!
+            let url2 = URL(string: urlString2)!
+            cell.profileView.af_setImage(withURL: url2)
+            
             return cell
         }else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "AddCommentCell")!

@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if PFUser.current() != nil {
             let main = UIStoryboard(name: "Main", bundle: nil)
             //Get an instance of FeedNavigationController
-            let feedNavigationController = main.instantiateViewController(withIdentifier: "FeedNavigationController")
+            let feedNavigationController = main.instantiateViewController(withIdentifier: "TabBarController")
             // Only 1 window per application, has a rootViewController
             window?.rootViewController = feedNavigationController
         }
