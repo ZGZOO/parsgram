@@ -22,7 +22,7 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://res.cloudinary.com/headincloud/image/upload/v1602226110/parsgram_gif_6_t9xtcc.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://res.cloudinary.com/headincloud/image/upload/v1602226568/parsgram_gif_7_jsfevn.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 # Parstagram - Part I
 
