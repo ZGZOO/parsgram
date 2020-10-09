@@ -94,12 +94,72 @@
             </objects>
             <point key="canvasLocation" x="-832" y="100"/>
         </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="lgu-VM-CLE">
+            <objects>
+                <tabBarController id="vce-nE-Aox" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zBh-Md-8He">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="y1r-dn-Rgl" kind="relationship" relationship="viewControllers" id="qdJ-Y9-Zvz"/>
+                        <segue destination="zaR-FW-r3d" kind="relationship" relationship="viewControllers" id="O7Z-9v-Be0"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MiU-Sd-d4N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="910" y="-634"/>
+        </scene>
+        <!--My Profile-->
+        <scene sceneID="FMb-f1-909">
+            <objects>
+                <viewController id="I8d-mU-RfO" customClass="ProfileViewController" customModule="parsgram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gB0-4m-f2L">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="0Ek-5R-MlW">
+                                <rect key="frame" x="20" y="122" width="374" height="243"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="enR-IO-IHJ" appends="YES" id="jiF-JS-OjX"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O6T-OZ-5Vu">
+                                <rect key="frame" x="20" y="433" width="374" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Post Profile Picture"/>
+                                <connections>
+                                    <action selector="onSubmitButton:" destination="I8d-mU-RfO" eventType="touchUpInside" id="sHd-2A-U54"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="GAM-yB-bFr"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="My Profile" id="cOP-Ww-DxL"/>
+                    <connections>
+                        <outlet property="imageView" destination="0Ek-5R-MlW" id="pKx-iz-ecC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LDZ-hr-ndA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="enR-IO-IHJ">
+                    <connections>
+                        <action selector="onCameraButton:" destination="I8d-mU-RfO" id="Bph-YY-3jL"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1663.7681159420292" y="835.71428571428567"/>
+        </scene>
         <!--Feed View Controller-->
         <scene sceneID="xH5-IE-c4S">
             <objects>
                 <viewController id="5OY-kI-Lna" customClass="FeedViewController" customModule="parsgram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2BM-6y-OOu">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="347" estimatedRowHeight="300" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6Jk-lK-6UE">
@@ -225,7 +285,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qlw-Th-GUj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076.8115942028987" y="99.776785714285708"/>
+            <point key="canvasLocation" x="171" y="836"/>
         </scene>
         <!--Camera View Controller-->
         <scene sceneID="hTO-5X-0Uz">
@@ -274,15 +334,16 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1947.826086956522" y="99.776785714285708"/>
+            <point key="canvasLocation" x="171" y="1585"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Feeds-->
         <scene sceneID="OK8-SK-dG3">
             <objects>
                 <navigationController storyboardIdentifier="FeedNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="y1r-dn-Rgl" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Feeds" selectedImage="feed_tab" id="CMH-Ac-WRe"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dpO-Wn-yLb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -294,10 +355,34 @@
             </objects>
             <point key="canvasLocation" x="172" y="100"/>
         </scene>
+        <!--Profile-->
+        <scene sceneID="Gnk-mV-OYW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zaR-FW-r3d" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" selectedImage="profile_tab" id="zof-Gq-Bfi"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hL0-0i-hsK">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="I8d-mU-RfO" kind="relationship" relationship="rootViewController" id="PtE-77-9wv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v9N-2S-dN2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1663.7681159420292" y="99.776785714285708"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="feed_tab" width="25" height="25"/>
         <image name="image_placeholder" width="375" height="375"/>
         <image name="insta_camera_btn" width="25" height="25"/>
         <image name="instagram_logo" width="255" height="108"/>
+        <image name="profile_tab" width="25" height="25"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="qdJ-Y9-Zvz"/>
+    </inferredMetricsTieBreakers>
 </document>
