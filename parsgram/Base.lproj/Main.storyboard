@@ -342,7 +342,7 @@
         <scene sceneID="OK8-SK-dG3">
             <objects>
                 <navigationController storyboardIdentifier="FeedNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="y1r-dn-Rgl" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Feeds" selectedImage="feed_tab" id="CMH-Ac-WRe"/>
+                    <tabBarItem key="tabBarItem" title="Feeds" image="feed_tab" selectedImage="feed_tab" id="CMH-Ac-WRe"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dpO-Wn-yLb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
@@ -361,7 +361,7 @@
         <scene sceneID="Gnk-mV-OYW">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zaR-FW-r3d" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" selectedImage="profile_tab" id="zof-Gq-Bfi"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="profile_tab" selectedImage="profile_tab" id="zof-Gq-Bfi"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hL0-0i-hsK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
