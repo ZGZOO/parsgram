@@ -24,6 +24,10 @@ Here's a walkthrough of implemented user stories:
 
 <img src='https://res.cloudinary.com/headincloud/image/upload/v1602226568/parsgram_gif_7_jsfevn.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
+Log in, Stay logged in, Log out:
+
+<img src='https://res.cloudinary.com/headincloud/image/upload/v1602229482/parsgram_gif_8_eb1zuz.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 # Parstagram - Part I
 
 This is an Instagram clone with a custom Parse backend that allows a user to post photos and view a global photos feed.
