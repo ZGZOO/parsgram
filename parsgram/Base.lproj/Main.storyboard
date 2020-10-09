@@ -150,7 +150,7 @@
                                             <outlet property="usernameLabel" destination="Z9R-dM-Oai" id="QLO-4j-7r9"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommentCell" rowHeight="47" id="eYb-a9-wbK" customClass="CommentCell" customModule="parsgram" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommentCell" rowHeight="47" id="eYb-a9-wbK" customClass="CommentCell" customModule="parsgram" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="351" width="414" height="47"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eYb-a9-wbK" id="1iI-ih-e5W">
@@ -158,21 +158,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jenny" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mTS-J4-Ws9">
-                                                    <rect key="frame" x="16" y="8" width="56" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="56" id="64g-7c-jfG"/>
-                                                        <constraint firstAttribute="height" constant="21" id="per-YL-kFF"/>
-                                                    </constraints>
+                                                    <rect key="frame" x="16" y="8" width="50" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a comment" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hfm-Lk-FwW">
-                                                    <rect key="frame" x="80" y="8" width="212" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="21" id="F3h-PK-kgU"/>
-                                                        <constraint firstAttribute="width" constant="212" id="hwO-zU-VJJ"/>
-                                                    </constraints>
+                                                    <rect key="frame" x="74" y="8" width="139.5" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -183,6 +175,8 @@
                                                 <constraint firstItem="mTS-J4-Ws9" firstAttribute="leading" secondItem="1iI-ih-e5W" secondAttribute="leading" constant="16" id="CWm-Go-Ihk"/>
                                                 <constraint firstItem="mTS-J4-Ws9" firstAttribute="top" secondItem="1iI-ih-e5W" secondAttribute="top" constant="8" id="EVO-v4-sm7"/>
                                                 <constraint firstItem="Hfm-Lk-FwW" firstAttribute="leading" secondItem="mTS-J4-Ws9" secondAttribute="trailing" constant="8" id="MT0-pO-Dxs"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Hfm-Lk-FwW" secondAttribute="bottom" constant="3" id="SL1-qn-r0u"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="mTS-J4-Ws9" secondAttribute="bottom" constant="3" id="cfJ-5J-1sE"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
