@@ -8,6 +8,7 @@ target 'parsgram' do
   # Pods for parsgram
   pod "AlamofireImage"
   pod "Parse"
+  pod "MessageInputBar"
 
   target 'parsgramTests' do
     inherit! :search_paths
